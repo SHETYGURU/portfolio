@@ -1,0 +1,73 @@
+/* Experience Section */
+
+.ex {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .ex h1 {
+    padding-top: 10%;
+  }
+  
+  .ex-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin: 20px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .ex-items:hover,
+  .ex-items:focus {
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.5);
+  }
+  
+  .ex-items .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .ex-items .left img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .ex-items .right {
+    text-align: center;
+    position: relative;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    margin-top: 10px;
+    display: none; /* Initially hide the tooltip */
+  }
+  
+  .ex-items:hover .tooltip {
+    display: block; /* Show the tooltip on hover */
+  }
+  

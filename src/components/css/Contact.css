@@ -1,0 +1,54 @@
+/* Contact */
+
+.contact {
+    text-align: center; /* Center align heading and content */
+    padding-top: 10%; /* Add padding-top to the container */
+}
+
+.contact-icon {
+    height: auto; /* Adjust based on content */
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between icons */
+    padding: 20px; /* Padding around the container */
+}
+
+.contact-icon .items {
+    background-color: transparent;
+    margin: 10px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Use this for a circle shape */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    clip-path: circle(50%); /* Ensure the border matches the icon's shape */
+}
+
+.contact-icon .items:hover {
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+}
+
+.contact-icon .items .icons {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .contact-icon .items {
+        height: 50px;
+        width: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-icon .items {
+        height: 40px;
+        width: 40px;
+        font-size: 1.2rem;
+    }
+}

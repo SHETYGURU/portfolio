@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "role": "Team Lead",
+    "organisation": "MessEatz (StartUp)",
+    "startDate": "Feb, 2023",
+    "endDate": "Present",
+    "location": "Mangalore,Karnataka",
+    "experiences": [
+      "Working as FullStack Developer",
+      "Worked as UI/UX Designer"
+    ],
+    "imageSrc": "company/logo.png"
+  }
+]

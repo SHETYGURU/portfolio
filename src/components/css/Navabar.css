@@ -1,0 +1,81 @@
+/* Navbar.css */
+
+.container.nav_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: black; /* Change this to match your design */
+    z-index: 1000; /* Ensure it stays above other elements */
+    padding: 1rem; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+  }
+  
+  .container.nav_bar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Background color when scrolled */
+  }
+  
+  .left.nav_items,
+  .right.nav_items {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right .nav_items {
+    margin-left: 20px; /* Adjust spacing between items as needed */
+    text-decoration: none; /* Optional: remove underline from links */
+    color: rgb(253, 246, 246); /* Change this to match your design */
+  }
+  
+  body {
+    padding-top: 60px; /* Adjust based on the height of your navbar */
+    margin: 0; /* Ensure there's no extra margin affecting layout */
+  }
+  
+  .nav_bar .nav_items {
+    padding: 16px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .nav_bar .nav_items:hover {
+    border-bottom: 3px solid yellow;
+  }
+  
+  @media (max-width: 768px) {
+    .container.nav_bar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem 2rem;
+    }
+  
+    .left.nav_items,
+    .right.nav_items {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .right .nav_items {
+      margin: 0; /* Remove margin between items on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container.nav_bar {
+      padding: 1rem;
+    }
+  
+    .left.nav_items,
+    .right.nav_items {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .right .nav_items {
+      margin-top: 10px; /* Add spacing between items on very small screens */
+    }
+  }

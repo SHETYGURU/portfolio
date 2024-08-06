@@ -1,0 +1,50 @@
+/* Skills Section */
+.container.skills {
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+.container.skills h1 {
+    margin-bottom: 20px;
+    padding-top: 10%;
+}
+
+/* Items Container */
+.items {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    margin: 0 auto; /* Center the container if needed */
+}
+
+/* Individual Item */
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(25% - 20px); /* 4 items per row with spacing considered */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    text-align: center;
+}
+
+/* Adjust image size for better fit */
+.item img {
+    width: 20%; /* Adjust image width for better fit */
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .item {
+        width: calc(50% - 20px); /* Approximately 2 items per row with spacing considered */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: calc(100% - 20px); /* Full width for very small screens */
+    }
+}
