@@ -26,10 +26,11 @@ const Experience = () => {
           onMouseLeave={handleMouseLeave}
         >
           <div className="left">
-            <img src={`/assets/${data.imageSrc}`} alt="" />
+            <img src={`/assets/${data.imageSrc}`} alt={data.organisation} />
           </div>
           <div className="right">
             <h2>{data.role}</h2>
+            <h3>{data.organisation}</h3> {/* Added this line to display organisation */}
             <h4>
               <span style={{ color: "yellowgreen" }}>
                 {data.startDate} - {data.endDate}{" "}
